@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Topper</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f0f0f0, #d9d9d9);
+            color: black;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            font-size: 2em;
+            font-weight: bold;
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+        }
+        .brand-name {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-size: 0.9em;
+            font-weight: normal;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: grey;
+        }
+        .content {
+            padding: 50px 20px;
+            animation: slideIn 1s ease-in-out;
+        }
+        .service {
+            background: linear-gradient(to right, #e0e0e0, #c0c0c0);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            width: 80%;
+            animation: fadeInUp 1s ease-in-out;
+            position: relative;
+        }
+        .service p {
+            display: none;
+            margin-top: 10px;
+        }
+        .service:hover p {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand-name">Digital Topper</div>
+        <nav class="nav-links">
+            <a href="#services">Services</a>
+            <a href="about.html">About</a>
+            <a href="#pricing">Pricing</a>
+        </nav>
+    </header>
+    <div class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>SEO Optimization</h3>
+            <p>Improve your website ranking with our advanced SEO techniques.</p>
+        </div>
+        <div class="service">
+            <h3>Social Media Marketing</h3>
+            <p>Boost your online presence with targeted social media campaigns.</p>
+        </div>
+        <div class="service">
+            <h3>Content Marketing</h3>
+            <p>Engage your audience with high-quality content strategies.</p>
+        </div>
+    </div>
+</body>
+</html>
