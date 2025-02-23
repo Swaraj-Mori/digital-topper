@@ -38,11 +38,19 @@
     <section class="contact-container">
         <div class="contact-form">
             <h2>Contact Us</h2>
-            <form action="contact.php" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn-submit">Send Message</button>
+            <form action="https://formspree.io/fxkgoabrb" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            
+                <input type="hidden" name="_next" value="https://digitaltopper.in/thankyou.html">
+            
+                <button type="submit">Send Message</button>
             </form>
         </div>
     </br>
