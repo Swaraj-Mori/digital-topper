@@ -1,115 +1,60 @@
-/* Reset and General Styles */
-* {
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-}
-
-/* Navigation Bar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.logo img {
-    height: 50px;
-    width: auto;
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-}
-
-.navbar ul li {
-    margin: 0 1rem;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-}
-
-/* About Section */
-.about, .mission, .social-media {
-    padding: 3rem 2rem;
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 2rem 0;
     text-align: center;
-    background-color: #fff;
-    margin: 2rem auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
 }
 
-.about h1, .mission h2, .social-media h2 {
-    color: #007BFF;
-    margin-bottom: 1rem;
-}
-
-.about p, .mission p, .social-media p {
-    font-size: 1.2rem;
-    color: #555;
-}
-
-/* Images */
 .about-img {
-    width: 100%;
-    max-width: 500px;
+    max-width: 100%;
+    height: auto;
     margin-top: 1rem;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
-/* Social Media Section */
 .social-media ul {
     list-style: none;
+    display: flex;
+    justify-content: center;
     padding: 0;
     margin-top: 1rem;
 }
 
 .social-media ul li {
-    display: inline;
-    margin: 0 1rem;
+    margin: 0 10px;
 }
 
-.social-media ul li a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: #007BFF;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+.social-media ul li a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
 }
 
-.social-media ul li a i {
-    font-size: 1.5rem;
+.social-media ul li a img:hover {
+    transform: scale(1.1);
 }
 
-/* Footer */
 footer {
-    text-align: center;
-    padding: 2rem;
     background-color: #333;
     color: #fff;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
 }
 
-footer h3 {
+.footer-content h3 {
     margin-bottom: 1rem;
 }
 
-footer p {
+.footer-content p {
     font-size: 1rem;
 }
