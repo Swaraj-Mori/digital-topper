@@ -1,11 +1,18 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset and General Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f9f9f9;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -15,7 +22,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.navbar .logo img {
+.logo img {
     height: 50px;
     width: auto;
 }
@@ -23,46 +30,83 @@ body {
 .navbar ul {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
 }
 
 .navbar ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    padding: 0.5rem 1rem;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
+/* About Section */
+.about, .mission, .social-media {
+    padding: 3rem 2rem;
     text-align: center;
-    padding: 3rem 0;
+    background-color: #fff;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
 }
 
+.about h1, .mission h2, .social-media h2 {
+    color: #007BFF;
+    margin-bottom: 1rem;
+}
+
+.about p, .mission p, .social-media p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Images */
 .about-img {
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     margin-top: 1rem;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
+/* Social Media Section */
 .social-media ul {
     list-style: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.social-media ul li {
+    display: inline;
+    margin: 0 1rem;
 }
 
 .social-media ul li a {
     text-decoration: none;
-    color: #007BFF;
     font-size: 1.2rem;
+    color: #007BFF;
+    font-weight: bold;
 }
 
-.footer-content {
-    background-color: #333;
-    color: #fff;
+.social-media ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
     text-align: center;
     padding: 2rem;
+    background-color: #333;
+    color: #fff;
+}
+
+footer h3 {
+    margin-bottom: 1rem;
+}
+
+footer p {
+    font-size: 1rem;
 }
