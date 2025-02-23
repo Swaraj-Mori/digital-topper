@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -8,21 +9,63 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .logo img {
+    height: 50px;
+    width: auto;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar nav ul li {
+    margin: 0 15px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar nav ul li a:hover {
+    color: #007BFF;
+}
+
+/* Section Box Styling */
 .container {
     width: 80%;
     margin: auto;
     padding: 2rem 0;
+}
+
+.section-box {
+    background: #fff;
+    padding: 2rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-section {
-    background: #fff;
-    padding: 2rem;
-    margin: 2rem auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
+/* Images */
 .about-img {
     max-width: 100%;
     height: auto;
@@ -30,6 +73,7 @@ section {
     border-radius: 8px;
 }
 
+/* Social Media Section */
 .social-media ul {
     list-style: none;
     display: flex;
@@ -52,6 +96,7 @@ section {
     transform: scale(1.1);
 }
 
+/* Footer */
 footer {
     background-color: #333;
     color: #fff;
@@ -66,31 +111,33 @@ footer {
 .footer-columns {
     display: flex;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     flex-wrap: wrap;
 }
 
 .footer-columns .column {
-    flex: 1;
-    margin: 1rem;
-    min-width: 200px;
+    width: 30%;
+    text-align: left;
 }
 
-.footer-columns ul {
+.footer-columns .column h4 {
+    margin-bottom: 1rem;
+}
+
+.footer-columns .column ul {
     list-style: none;
     padding: 0;
 }
 
-.footer-columns ul li {
+.footer-columns .column ul li {
     margin: 5px 0;
 }
 
-.footer-columns ul li a {
+.footer-columns .column ul li a {
     color: #fff;
     text-decoration: none;
-    transition: text-decoration 0.3s ease-in-out;
 }
 
-.footer-columns ul li a:hover {
+.footer-columns .column ul li a:hover {
     text-decoration: underline;
 }
