@@ -1,0 +1,30 @@
+.about-intro, .about-content, .about-mission {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    margin-bottom: 2rem;
+}
+
+.about-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.footer-columns .column a {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer-columns .column a:hover {
+    color: #007BFF;
+}
+
+@media (max-width: 768px) {
+    .about-img {
+        width: 80%;
+    }
+}
