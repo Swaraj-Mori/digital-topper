@@ -8,6 +8,7 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
+    background-color: #f8f8f8;
 }
 
 .navbar {
@@ -17,6 +18,7 @@ body {
     padding: 1rem 2rem;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 .navbar .logo {
@@ -40,6 +42,11 @@ body {
     text-decoration: none;
     color: #333;
     padding: 0.5rem 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar ul li a:focus, .navbar ul li a:hover {
+    color: #007BFF;
 }
 
 .navbar ul li .dropdown {
@@ -50,19 +57,13 @@ body {
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
 }
 
 .navbar ul li:hover .dropdown {
     display: block;
-}
-
-.navbar ul li .dropdown li {
-    margin: 0;
-}
-
-.navbar ul li .dropdown li a {
-    padding: 0.5rem;
-    display: block;
+    opacity: 1;
 }
 
 .btn-primary {
@@ -71,6 +72,11 @@ body {
     padding: 0.5rem 1rem;
     border-radius: 4px;
     text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #0056b3;
 }
 
 .btn-outline {
@@ -79,6 +85,12 @@ body {
     padding: 0.5rem 1rem;
     border-radius: 4px;
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-outline:hover, .btn-outline:focus {
+    background-color: #007BFF;
+    color: #fff;
 }
 
 .hero {
@@ -107,10 +119,13 @@ body {
     padding: 2rem;
     background-color: #fff;
     border-bottom: 1px solid #ddd;
+    flex-wrap: wrap;
 }
 
 .stat {
     text-align: center;
+    min-width: 120px;
+    margin: 1rem 0;
 }
 
 .services {
@@ -123,6 +138,7 @@ body {
     display: flex;
     justify-content: space-around;
     margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
 .service {
@@ -132,6 +148,11 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 30%;
     text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service:hover {
+    transform: scale(1.05);
 }
 
 .testimonials {
@@ -144,6 +165,7 @@ body {
     display: flex;
     justify-content: space-around;
     margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
 .testimonial {
@@ -151,6 +173,11 @@ body {
     background-color: #f9f9f9;
     padding: 1rem;
     border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
 }
 
 footer {
@@ -166,9 +193,10 @@ footer h3 {
 footer a {
     color: #fff;
     text-decoration: none;
+    transition: text-decoration 0.3s ease-in-out;
 }
 
-footer a:hover {
+footer a:hover, footer a:focus {
     text-decoration: underline;
 }
 
@@ -176,4 +204,17 @@ footer a:hover {
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .services-grid, .testimonials-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service, .testimonial {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
 }
